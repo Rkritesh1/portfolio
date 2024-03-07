@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ritesh's Portfolio</title>
+    <style>
+        * {
+           margin: 0;
+           padding: 0;
+           }
+         .body{
+            background-size:cover;
+            background-repeat: no-repeat;
+           }
+        .class1 {
+            text-align: center;
+        }
+        a {
+            color:seashell;
+            font-size: 28px;
+            text-decoration: none;
+            position: relative;
+         }
+         a::after {
+          content: '';
+          display: block;
+          width: 0;
+          height: 4px;
+          background-color: red;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          transition: width 0.5s ease;
+         }
+         a:hover::after {
+          width: 100%;
+         }
+         header {
+            background-color:#333;
+            color: #fff;
+            padding: 30px;
+         }
+         footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0%;
+            width: 100%;
+         }
+         @keyframes slideInFromBottom {
+    0% {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  .class2 {
+    animation: slideInFromBottom 1s ease-out forwards;
+  }
+       
+    </style>
+</head>
+<body background="C:\Users\Ritesh\Desktop\portfolio1\IMG_20230403_002115-012.jpg">
+
+    <div class="class1 class2">
+    <header>
+    <h1>Ritesh Portfolio</h1>
+    </header>
+    <br>
+    <a href="index.html">Home</a>
+    <br>
+    <br>
+    <br>
+    <a href="about.html">About</a>
+    <br>
+    <br>
+    <br>
+    <a href="education.html">Education</a>
+    <br>
+    <br>
+    <br>
+    <a href="projects.html">Projects</a>
+    <br>
+    <br>
+    <br>
+    <a href="contact.html">Contact</a>
+</div>
+
+<footer>
+    <p>&copy; RK portfolio.</p>
+</footer>
+</body>
+</html>
